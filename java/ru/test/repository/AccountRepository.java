@@ -7,7 +7,7 @@ import ru.test.bookmarks.Account;
 
 import java.util.Optional;
 @Repository
-@ComponentScan(basePackages = "ru.test.bookmarks")
+
 public interface AccountRepository extends JpaRepository<Account, Long> {
     Optional<Account> findByUsername(String username);
 }
